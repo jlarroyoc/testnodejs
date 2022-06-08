@@ -14,7 +14,7 @@ app.get('/api/timeout', function(req, res){
      console.log('Sleeping '+sec+' seconds...' );
      sleep(sec*1000);
      console.log('Ending...' );
-     res.status(200).send('End timeout\n');
+     res.status(200).send('End timeout: '+sec+ ' seconds.');
 });
 
 app.listen(port, () => {
