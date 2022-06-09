@@ -1,5 +1,6 @@
 const express = require('express');
-var sleep = require('system-sleep');
+//var sleep = require('system-sleep');
+require( 'console-stamp' )( console );
 const port = 8080
 
 const app = express();
